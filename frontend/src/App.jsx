@@ -53,7 +53,7 @@ const App = () => {
     const username = generateUsername();
     setUsername(username);
 
-    const socket = new WebSocket('ws://chattr-production-f486.up.railway.app/ws');
+    const socket = new WebSocket('ws://web-production-f8c41.up.railway.app:8080/ws');
 
     socket.onopen = () => {
       console.log('WebSocket connected');
